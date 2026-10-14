@@ -1506,3 +1506,104 @@ html:not(.js) .hunt {
     justify-self: end;
   }
 }
+
+/* ---------- movimento ----------
+   Só transform e opacity, 150 a 400ms, uma curva ease-out.
+   O estado escondido só vale com JavaScript (html.js); sem ele o conteúdo já está visível.
+   A opacidade vale para todos; o deslocamento só entra em no-preference. */
+.js [data-rise] {
+  opacity: 0;
+  animation: fade-in var(--t-reveal) var(--ease-out) forwards;
+  animation-delay: calc(var(--i, 0) * var(--stagger) + 100ms);
+}
+
+.js [data-reveal] {
+  opacity: 0;
+  transition: opacity var(--t-reveal) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * var(--stagger));
+}
+
+.js [data-reveal].is-in {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js .lines [data-line] {
+    transform: translateY(105%);
+    animation: line-up var(--t-reveal) var(--ease-out) forwards;
+    animation-delay: calc(var(--i, 0) * var(--stagger) + 100ms);
+  }
+
+  .js [data-reveal] {
+    transform: translateY(16px);
+    transition: opacity var(--t-reveal) var(--ease-out), transform var(--t-reveal) var(--ease-out);
+    transition-delay: calc(var(--i, 0) * var(--stagger));
+  }
+
+  .js [data-reveal].is-in {
+    transform: none;
+  }
+
+  /* as linhas da lista de sinais entram de lado, não de baixo */
+  .js .signs__list [data-reveal] {
+    transform: translateX(-16px);
+  }
+
+  .js .signs__list [data-reveal].is-in {
+    transform: none;
+  }
+
+  /* o observador fica no título: um filho escondido pela máscara nunca seria visto */
+  .js .cta__title[data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .js .cta__title .line > span {
+    transform: translateY(105%);
+    transition: transform var(--t-reveal) var(--ease-out);
+    transition-delay: calc(var(--i, 0) * var(--stagger));
+  }
+
+  .js .cta__title.is-in .line > span {
+    transform: none;
+  }
+}
+
+/* movimento reduzido: nenhum deslocamento, o toque responde com opacidade */
+@media (prefers-reduced-motion: reduce) {
+  .button:active,
+  .link:active,
+  .header__logo:active,
+  .footer__phone:active,
+  .place__opt:active span,
+  .sign:active .sign__box,
+  .tile:active,
+  .js .svc__tab:active {
+    transform: none;
+    opacity: 0.8;
+  }
+
+  .sign__box svg {
+    transform: none;
+    transition: opacity var(--t-press) var(--ease-out);
+  }
+
+  .menu {
+    transform: none;
+    transition: opacity var(--t-fade) var(--ease-out);
+  }
+
+  .menu__links a:active {
+    transform: none;
+    opacity: 0.8;
+  }
+}
+
+@keyframes fade-in {
+  to { opacity: 1; }
+}
+
+@keyframes line-up {
+  to { transform: none; }
+}
