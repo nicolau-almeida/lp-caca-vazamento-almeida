@@ -51,3 +51,10 @@ $RECYCLE.BIN/
 .idea/
 *.swp
 *.swo
+
+# Ferramentas locais de IA e relatórios de design (não fazem parte do site)
+.agents/
+.claude/
+.impeccable/
+.taste-skill/
+skills-lock.json
