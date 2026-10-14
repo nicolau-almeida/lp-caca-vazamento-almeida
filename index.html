@@ -3,16 +3,322 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>Caça Vazamento Almeida</title>
+  <title>Caça Vazamento em Franco da Rocha e Região | Caça Vazamento Almeida</title>
+  <script>document.documentElement.classList.add('js', 'at-hero'); setTimeout(function () { if (!window.almeidaPronto) document.documentElement.classList.remove('js', 'at-hero'); }, 4000);</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header></header>
+  <a class="skip" href="#topo">Pular para o conteúdo</a>
 
-  <main></main>
+  <!-- ícone de mensagem usado nos botões de orçamento -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="icone-mensagem" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2Zm-4 9.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Zm4 0a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Zm4 0a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z"/>
+    </symbol>
+  </svg>
 
-  <footer></footer>
+  <header class="header on-dark">
+    <a class="header__logo" href="#topo" aria-label="Caça Vazamento Almeida, início">
+      <img src="assets/logo.webp" alt="Caça Vazamento Almeida" width="569" height="123">
+    </a>
+    <nav class="header__nav" aria-label="Seções">
+      <a class="link" href="#sinais">Sinais</a>
+      <a class="link" href="#atendimento">Atendimento</a>
+      <a class="link" href="#servicos">Serviços</a>
+      <a class="link" href="#regiao">Região</a>
+      <a class="link" href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="button" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener"><svg class="button__icon" aria-hidden="true"><use href="#icone-mensagem"/></svg>Pedir orçamento</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu on-dark" id="menu" hidden>
+    <nav aria-label="Menu">
+      <ul class="menu__links">
+        <li><a href="#sinais">Sinais</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#regiao">Região</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+    </nav>
+    <div class="menu__foot">
+      <a class="button button--lg" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener"><svg class="button__icon" aria-hidden="true"><use href="#icone-mensagem"/></svg>Pedir orçamento</a>
+      <a class="link menu__phone" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener">(11) 94005-8415</a>
+    </div>
+  </div>
+
+  <main id="topo">
+    <section class="hero on-dark" aria-labelledby="hero-title">
+      <img class="hero__img" src="assets/almeida-geofone-hero.webp" alt="Almeida escutando a tubulação com fone de ouvido e o sensor do geofone na mão" width="1672" height="941" fetchpriority="high">
+      <div class="hero__content">
+        <h1 class="hero__title lines" id="hero-title">
+          <span class="line"><span data-line style="--i:0">Almeida escuta</span></span>
+          <span class="line"><span data-line style="--i:1">o vazamento</span></span>
+        </h1>
+        <p class="hero__sub" data-rise style="--i:3">Localização de vazamentos com geofone digital e vídeo inspeção em Franco da Rocha e região. Casa ou comércio, orçamento pelo WhatsApp.</p>
+        <div class="hero__actions" data-rise style="--i:4">
+          <a class="button button--lg hero__cta" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener"><svg class="button__icon" aria-hidden="true"><use href="#icone-mensagem"/></svg>Pedir orçamento</a>
+          <a class="link hero__more" href="#sinais">Ver os sinais de vazamento</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts on-dark" aria-label="Resumo">
+      <ul class="wrap facts__list">
+        <li data-reveal style="--i:0"><strong>+29</strong><span>anos de experiência</span></li>
+        <li data-reveal style="--i:1"><strong>7</strong><span>cidades atendidas</span></li>
+        <li data-reveal style="--i:2"><strong>1</strong><span>mensagem para pedir o orçamento</span></li>
+      </ul>
+    </section>
+
+    <section class="hunt on-dark" id="geofone" aria-labelledby="hunt-title">
+      <div class="wrap grid hunt__grid">
+        <div class="hunt__text">
+          <h2 class="head" id="hunt-title" data-reveal>Ache o vazamento</h2>
+          <p class="hunt__intro" data-reveal style="--i:1">Tem um cano vazando embaixo deste piso. Toque nos quadrados e acompanhe o sinal: quanto mais forte, mais perto.</p>
+          <div class="readout" data-reveal style="--i:2">
+            <p class="readout__num" id="hunt-num">0%</p>
+            <div class="meter" id="hunt-meter" aria-hidden="true">
+              <span style="--n:0"></span><span style="--n:1"></span><span style="--n:2"></span><span style="--n:3"></span><span style="--n:4"></span><span style="--n:5"></span><span style="--n:6"></span><span style="--n:7"></span><span style="--n:8"></span><span style="--n:9"></span><span style="--n:10"></span><span style="--n:11"></span>
+            </div>
+          </div>
+          <p class="hunt__status" id="hunt-status" aria-live="polite">Nenhum toque ainda.</p>
+          <div class="hunt__actions">
+            <a class="button" id="hunt-cta" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener" hidden><svg class="button__icon" aria-hidden="true"><use href="#icone-mensagem"/></svg>Pedir orçamento</a>
+            <button class="link hunt__reset" id="hunt-reset" type="button" hidden>Esconder de novo</button>
+          </div>
+        </div>
+        <div class="floor" id="hunt-floor" role="group" aria-label="Piso com um vazamento escondido. Use as setas para andar entre os quadrados." data-reveal style="--i:2"></div>
+      </div>
+    </section>
+
+    <section class="signs" id="sinais" aria-labelledby="signs-title">
+      <div class="wrap">
+        <h2 class="head signs__title" id="signs-title" data-reveal>Sinais de vazamento escondido</h2>
+        <div class="grid signs__body">
+          <figure class="signs__photo" data-reveal>
+            <img src="assets/localizacao-de-vazamento.webp" alt="Canto de parede com mancha de umidade, mofo e tinta descascando acima do rodapé, e o piso molhado" width="1122" height="1402" loading="lazy">
+          </figure>
+
+          <form class="signs__form" id="orcamento" action="https://wa.me/5511940058415" method="get" target="_blank">
+            <p class="signs__hint" data-reveal>Toque no que está acontecendo aí. A mensagem já sai pronta.</p>
+
+            <ul class="signs__list">
+              <li data-reveal style="--i:0"><label class="sign"><input type="checkbox" value="conta de água alta"><span class="sign__kind">Conta</span><span class="sign__text">A conta de água subiu sem motivo</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li data-reveal style="--i:1"><label class="sign"><input type="checkbox" value="hidrômetro girando com tudo fechado"><span class="sign__kind">Hidrômetro</span><span class="sign__text">O relógio gira com tudo fechado</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li data-reveal style="--i:2"><label class="sign"><input type="checkbox" value="barulho de água com as torneiras fechadas"><span class="sign__kind">Som</span><span class="sign__text">Barulho de água com as torneiras fechadas</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li data-reveal style="--i:3"><label class="sign"><input type="checkbox" value="caixa d'água esvaziando sozinha"><span class="sign__kind">Caixa d’água</span><span class="sign__text">A caixa esvazia sozinha</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li class="signs__group" data-reveal style="--i:4"><label class="sign"><input type="checkbox" value="mancha, mofo ou tinta estufando na parede"><span class="sign__kind">Parede</span><span class="sign__text">Mancha, mofo ou tinta estufando</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li data-reveal style="--i:5"><label class="sign"><input type="checkbox" value="piso úmido ou soltando"><span class="sign__kind">Piso</span><span class="sign__text">Piso úmido ou soltando</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li data-reveal style="--i:6"><label class="sign"><input type="checkbox" value="piscina perdendo água"><span class="sign__kind">Piscina</span><span class="sign__text">O nível baixa mais que o normal</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+              <li data-reveal style="--i:7"><label class="sign"><input type="checkbox" value="ponto do quintal sempre encharcado"><span class="sign__kind">Quintal</span><span class="sign__text">Um ponto do chão sempre encharcado</span><span class="sign__box" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8.5 6.2 12.5 14 3.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span></label></li>
+            </ul>
+
+            <fieldset class="place" data-reveal>
+              <legend class="place__legend">Onde é o vazamento?</legend>
+              <label class="place__opt"><input type="radio" name="local" value="casa" checked><span>Casa</span></label>
+              <label class="place__opt"><input type="radio" name="local" value="comércio"><span>Comércio</span></label>
+            </fieldset>
+
+            <div class="send" data-reveal>
+              <p class="send__msg" id="mensagem" aria-live="polite">Olá! Preciso de orçamento para caça vazamento. Local: casa.</p>
+              <input type="hidden" name="text" id="mensagem-campo" value="Olá! Preciso de orçamento para caça vazamento. Local: casa.">
+              <button class="button" type="submit"><svg class="button__icon" aria-hidden="true"><use href="#icone-mensagem"/></svg>Pedir orçamento</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="atendimento" aria-labelledby="steps-title">
+      <div class="wrap">
+        <h2 class="head" id="steps-title" data-reveal>Como é o atendimento</h2>
+        <ol class="steps__list">
+          <li class="step" style="--i:0" data-reveal>
+            <h3 class="title">Primeiro, você chama.</h3>
+            <p>Manda mensagem no WhatsApp e conta o que está vendo.</p>
+          </li>
+          <li class="step" style="--i:1" data-reveal>
+            <h3 class="title">Depois, a gente escuta.</h3>
+            <p>O geofone digital capta o som da água escapando dentro do cano.</p>
+          </li>
+          <li class="step" style="--i:2" data-reveal>
+            <h3 class="title">Aí o ponto é marcado.</h3>
+            <p>Você fica sabendo onde está o vazamento antes de qualquer quebra.</p>
+          </li>
+          <li class="step" style="--i:3" data-reveal>
+            <h3 class="title">No fim, laudo e reparo.</h3>
+            <p>Você recebe o laudo, a orientação e o conserto no ponto certo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="services on-dark" id="servicos" aria-labelledby="services-title">
+      <div class="wrap">
+        <h2 class="head" id="services-title" data-reveal>O que o Almeida faz</h2>
+        <div class="showcase" id="vitrine" data-reveal style="--i:1">
+          <article class="svc is-active">
+            <h3 class="svc__name"><button class="svc__tab" type="button">Localização de vazamento</button></h3>
+            <div class="svc__panel">
+              <figure class="svc__photo"><img src="assets/geofone-cano.webp" alt="Almeida agachado, de fone de ouvido, marcando um X vermelho no piso ao lado do sensor do geofone" width="1536" height="1024" loading="lazy"></figure>
+              <p class="svc__desc">Encontra o ponto exato em tubulação de parede, piso, laje e área externa. Quebra só onde o vazamento está.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <h3 class="svc__name"><button class="svc__tab" type="button">Geofone digital</button></h3>
+            <div class="svc__panel">
+              <figure class="svc__photo"><img src="assets/geofone.webp" alt="Técnico ajoelhado, com fone de ouvido, apoiando o geofone digital no piso de uma cozinha" width="1536" height="1024" loading="lazy"></figure>
+              <p class="svc__desc">Um sensor encostado no piso ou na parede amplifica o ruído da água sob pressão. Onde o som é mais forte, está o vazamento.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <h3 class="svc__name"><button class="svc__tab" type="button">Vídeo inspeção</button></h3>
+            <div class="svc__panel">
+              <figure class="svc__photo"><img src="assets/video-inspecao.webp" alt="Técnico passando a sonda de vídeo inspeção por um cano, com o interior da tubulação aparecendo no monitor" width="1536" height="1024" loading="lazy"></figure>
+              <p class="svc__desc">Uma câmera percorre a tubulação por dentro e mostra entupimento, trinca ou junta solta na tela.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <h3 class="svc__name"><button class="svc__tab" type="button">Laudo e orientação</button></h3>
+            <div class="svc__panel">
+              <figure class="svc__photo"><img src="assets/laudo.webp" alt="Almeida preenchendo o laudo em uma prancheta, ao lado do cano exposto no piso do banheiro" width="1536" height="1024" loading="lazy"></figure>
+              <p class="svc__desc">Registro claro do diagnóstico.</p>
+            </div>
+          </article>
+          <article class="svc">
+            <h3 class="svc__name"><button class="svc__tab" type="button">Reparo</button></h3>
+            <div class="svc__panel">
+              <figure class="svc__photo"><img src="assets/reparo.webp" alt="Almeida de luvas encaixando uma conexão de PVC no cano, em uma abertura pequena no piso do banheiro" width="1536" height="1024" loading="lazy"></figure>
+              <p class="svc__desc">Com o ponto marcado, o conserto é feito no local.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="region on-dark" id="regiao" aria-labelledby="region-title">
+      <div class="wrap grid">
+        <div class="region__text">
+          <h2 class="title region__title" id="region-title" data-reveal>Onde o Almeida atende</h2>
+          <p data-reveal style="--i:1">Atendimento residencial e comercial em sete cidades.</p>
+        </div>
+        <ul class="region__list">
+          <li data-reveal style="--i:0">Franco da Rocha</li>
+          <li data-reveal style="--i:1">Caieiras</li>
+          <li data-reveal style="--i:2">Francisco Morato</li>
+          <li data-reveal style="--i:3">Jundiaí</li>
+          <li data-reveal style="--i:4">Mairiporã</li>
+          <li data-reveal style="--i:5">Atibaia</li>
+          <li data-reveal style="--i:6">Bragança Paulista</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="sobre" aria-labelledby="about-title">
+      <div class="wrap grid about__grid">
+        <h2 class="sr-only" id="about-title">Sobre a Caça Vazamento Almeida</h2>
+        <figure class="about__photo" data-reveal>
+          <img src="assets/almeida-geofone-hero.webp" alt="Almeida com fone de ouvido e o sensor do geofone na mão" width="1672" height="941" loading="lazy">
+        </figure>
+        <div class="about__text">
+          <p class="title about__lead" data-reveal><strong>Caça Vazamento Almeida</strong> atende casas e comércios em Franco da Rocha e região há mais de 29 anos, com geofone digital e câmera de vídeo inspeção.</p>
+          <p class="about__more" data-reveal style="--i:1">Escuta a tubulação e marca o ponto antes de qualquer quebra. O atendimento é rápido porque vazamento não espera: cada dia de cano aberto é água paga e estrutura molhada.</p>
+          <ul class="about__facts" data-reveal style="--i:2">
+            <li>Franco da Rocha e região, SP</li>
+            <li>Mais de 29 anos de experiência</li>
+            <li><a class="link" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener">(11) 94005-8415</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="duvidas" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="grid faq__row">
+          <h2 class="head faq__title" id="faq-title" data-reveal>Dúvidas</h2>
+        </div>
+        <div class="grid faq__row">
+          <h3 class="title faq__q" data-reveal>Como sei se tenho vazamento?</h3>
+          <p class="faq__a" data-reveal style="--i:1">Feche todas as torneiras e não use água por alguns minutos. Olhe o hidrômetro. Se ele continuar girando, tem vazamento.</p>
+        </div>
+        <div class="grid faq__row">
+          <h3 class="title faq__q" data-reveal>Precisa quebrar para achar?</h3>
+          <p class="faq__a" data-reveal style="--i:1">Não. O geofone e a câmera localizam o ponto sem quebrar. A quebra é só para o reparo, e só naquele ponto.</p>
+        </div>
+        <div class="grid faq__row">
+          <h3 class="title faq__q" data-reveal>Atende comércio?</h3>
+          <p class="faq__a" data-reveal style="--i:1">Sim. O atendimento é residencial e comercial: casas, lojas, restaurantes, galpões e escritórios.</p>
+        </div>
+        <div class="grid faq__row">
+          <h3 class="title faq__q" data-reveal>Atende fora de Franco da Rocha?</h3>
+          <p class="faq__a" data-reveal style="--i:1">Sim. Além de Franco da Rocha, atende Caieiras, Francisco Morato, Jundiaí, Mairiporã, Atibaia e Bragança Paulista.</p>
+        </div>
+        <div class="grid faq__row">
+          <h3 class="title faq__q" data-reveal>Quanto custa?</h3>
+          <p class="faq__a" data-reveal style="--i:1">Depende do imóvel e do tipo de vazamento. O orçamento é pedido pelo WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta on-dark" aria-labelledby="cta-title">
+      <!-- ondas do geofone, os mesmos arcos da logo -->
+      <svg class="cta__rings" viewBox="0 0 1000 1000" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="5">
+          <circle cx="500" cy="500" r="70" opacity="1"/>
+          <circle cx="500" cy="500" r="150" opacity="0.8"/>
+          <circle cx="500" cy="500" r="235" opacity="0.6"/>
+          <circle cx="500" cy="500" r="325" opacity="0.42"/>
+          <circle cx="500" cy="500" r="415" opacity="0.26"/>
+          <circle cx="500" cy="500" r="495" opacity="0.14"/>
+        </g>
+        <circle cx="500" cy="500" r="22" fill="currentColor"/>
+      </svg>
+      <div class="wrap cta__inner">
+        <h2 class="display cta__title lines" id="cta-title" data-reveal>
+          <span class="line"><span>Chame antes</span></span>
+          <span class="line"><span style="--i:1">de quebrar</span></span>
+        </h2>
+        <div class="cta__foot">
+          <p data-reveal style="--i:2">Mande uma mensagem agora e diga o que está acontecendo. Fale conosco pelo WhatsApp.</p>
+          <div data-reveal style="--i:3">
+            <a class="button button--lg" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener"><svg class="button__icon" aria-hidden="true"><use href="#icone-mensagem"/></svg>Pedir orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer on-dark">
+    <div class="wrap footer__inner">
+      <div class="footer__top">
+        <p>Caça Vazamento Almeida</p>
+        <p>Detecção e reparo de vazamentos</p>
+        <p>Franco da Rocha e região, SP</p>
+        <a class="link footer__up" href="#topo">Voltar ao topo</a>
+      </div>
+      <div class="footer__bottom" data-reveal>
+        <a class="footer__phone" data-wa href="https://wa.me/5511940058415?text=Ol%C3%A1!%20Preciso%20de%20or%C3%A7amento%20para%20ca%C3%A7a%20vazamento." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp: (11) 94005-8415">(11)&nbsp;94005-8415</a>
+        <div class="footer__meta">
+          <nav class="footer__links" aria-label="Rodapé">
+            <a class="link" href="#sinais">Sinais</a>
+            <a class="link" href="#atendimento">Atendimento</a>
+            <a class="link" href="#servicos">Serviços</a>
+            <a class="link" href="#regiao">Região</a>
+            <a class="link" href="#duvidas">Dúvidas</a>
+          </nav>
+          <p>Orçamento pelo WhatsApp</p>
+          <p>Franco da Rocha e região, 2026</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js" defer></script>
 </body>
